@@ -37,3 +37,4 @@ def eliminar_producto(request, id):
         producto.delete()
         return redirect('lista_productos')
     return render(request, 'inventario/eliminar_producto.html', {'producto': producto})
+
